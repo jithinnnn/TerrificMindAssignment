@@ -1,0 +1,46 @@
+*{
+    overflow-x: hidden;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.product-image{
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.product-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-name{
+    padding: 4px;
+    font-family: "Spectral SC", serif;
+    color:rgb(29, 96, 74);
+    font-size: large;
+}
+
+.product-price{
+    background-color: green;
+    display: inline-block;
+    padding: 4px;
+    color: aliceblue;
+    margin-left: 3px;
+    font-family: "Spectral SC", serif;
+}
+
+@media screen and (max-width: 480px){
+    .product-name{
+        font-size: medium;
+    }
+}
+
